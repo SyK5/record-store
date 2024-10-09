@@ -7,11 +7,8 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import NotFound from "./components/NotFound";
 import Layout from "./components/Layout";
-import { serAxiosDefaults } from "./utils/axiosConfig";
 
 const App = () => {
-  serAxiosDefaults();
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
