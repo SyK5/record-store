@@ -7,11 +7,10 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import NotFound from "./components/NotFound";
 import Layout from "./components/Layout";
-import axios from "axios";
+import { serAxiosDefaults } from "./utils/axiosConfig";
 
 const App = () => {
-  axios.defaults.baseURL = "http://localhost:8000";
-  axios.defaults.withCredentials = true;
+  serAxiosDefaults();
 
   return (
     <Routes>
