@@ -14,7 +14,7 @@ export const createSendToken = (res, status, user) => {
   const cookieOptions = {
     expires: new Date(Date.now() + COOKIE_EXP * 24 * 60 * 60 * 1000),
     httpOnly: true,
-    secure: true,
+    secure: isProduction,
     sameSite: isProduction ? "None" : "Lax",
   };
 
