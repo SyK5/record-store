@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAllRecords = async (recordsDispatch) => {
   try {
-    const response = await axios.get("/records");
+    const response = await axios.get(`${import.meta.env.VITE_CLIENT_URL}/records`);        
 
     recordsDispatch({ type: "FETCH_RECORDS_SUCCESS", payload: response.data });
   } catch (error) {
