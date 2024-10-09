@@ -168,16 +168,6 @@ This repository contains multiple branches for a record store application built 
 
 ## Getting Started
 
-### Clone the Repository
-
-To get started with the project, clone the desired branch:
-
-```bash
-git clone -b <branch-name> git@github.com:dci-fbw-wd-23-e11-a/records-store.git
-```
-
-Replace `<branch-name>` with either `starter-code` or `stage-I`, depending on which version you want to work with.
-
 ### Installation
 
 Once you've cloned the repository, navigate to the project directory and install the necessary dependencies:
